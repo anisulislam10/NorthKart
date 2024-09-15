@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import northkartLogo from "./../../assets/logo/logo-color.png"
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,11 +9,11 @@ function Navbar() {
   };
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-end bg-[#FFE86A] ">
       {/* Burger Menu (Visible on small screens) */}
       <button
         onClick={toggleMenu}
-        className="block xsml:hidden w-8 h-8 rounded-full bg-[#E6C744] text-white mt-5 ml-1"
+        className="block xsml:hidden w-8 h-8 rounded-full bg-[#E6C744] text-white mt-5 ml-1 sm:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,13 +31,22 @@ function Navbar() {
         </svg>
       </button>
 
+      <img src={northkartLogo} alt="" width="7%" className='md:ml-4'/>
       {/* Menu items */}
-      <ul className={`ml-4 space-x-4 text-sm font-semibold ${isMenuOpen ? 'block' : 'hidden'}  xsml:flex xsml:space-x-2 xsml:mt-3`}>
-        <li>CATALOGUE</li>
-        <li>FASHION</li>
-        <li>FAVOURITE</li>
-        <li>LIFESTYLE</li>
-        <li>signup</li>
+      <ul className={`ml-4 space-x-4 text-sm font-semibold ${isMenuOpen ? 'block' : 'hidden'}  xsml:flex xsml:space-x-3 xsml:mt-3 
+      sm:items-center sm:text-center sm:ml-[100px] sm:font-bold
+      md:items-end md:text-end md:ml-[50px] md:font-bold md:flex md:space-x-11 
+
+      `}>
+
+        
+        <li className='md:md:hover:md:bg-yellow-500 md:px-4 md:hover:md:text-white md:rounded-sm md:ml-[400px]'>CATALOGUE</li>
+        <li className='md:md:hover:md:bg-yellow-500 md:px-4 md:hover:md:text-white md:rounded-sm'>FASHION</li>
+        <li className='md:md:hover:md:bg-yellow-500 md:px-4 md:hover:md:text-white md:rounded-sm'>FAVOURITE</li>
+        <li className='md:md:hover:md:bg-yellow-500 md:px-4 md:hover:md:text-white md:rounded-sm'>LIFESTYLE</li>
+        <li className='bg-black text-white px-2
+        md:px-7 md:text-[20px] md:py-1 md:rounded-md md:md:hover:md:bg-yellow-500 md:text-center md:items-center
+        '>signup</li>
 
       </ul>
     </div>

@@ -10,11 +10,11 @@ export default {
       'xxsml': '1px',
       // => @media (min-width: 1px) { ... }
 
-      'xsml': '300px',
-      // => @media (min-width: 300px) { ... }
+      'xsml': '449px',
+      // => @media (min-width: 449px) { ... }
 
-      'sm': '301px',
-      // => @media (min-width: 576px) { ... }
+      'sm': '600px',
+      // => @media (min-width: 600px) { ... }
 
       'md': '768px',
       // => @media (min-width: 768px) { ... }
