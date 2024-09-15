@@ -10,10 +10,10 @@ export default {
       'xxsml': '1px',
       // => @media (min-width: 1px) { ... }
 
-      'xsml': '300px',
+      'xsml': '449px',
       // => @media (min-width: 300px) { ... }
 
-      'sm': '576px',
+      'sm': '450px',
       // => @media (min-width: 576px) { ... }
 
       'md': '768px',
